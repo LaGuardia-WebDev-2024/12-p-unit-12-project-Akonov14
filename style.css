@@ -1,14 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Delius&family=Poetsen+One&display=swap");
 
-html {
-  background-color: white;
+h3{
   padding-left: 20px;
+  font-family: "Barriecito", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 img{
   border-radius: 30px;
-}
+  width:300px;
+  border: 5px solid;
+border-color: rgb(66, 128, 97)}
 
 h1 {
-  font-family: "Poetsen One", sans-serif;
+  font-family: "Barriecito", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-color: rgb(215, 240, 188);
+}
+
+#padding{
+  padding-left:70px
 }

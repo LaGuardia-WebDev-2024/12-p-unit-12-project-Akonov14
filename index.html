@@ -16,48 +16,77 @@ Select ONE Additional
 
 <!DOCTYPE html>
 <html>
+  
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
     <meta charset="utf-8" />
     <title>Unit 12 Project</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
+  <div id="padding">
+    
+
   <body>
     <button id="mem1-button">Memory #1</button>
     <button id="mem2-button">Memory #2</button>
     <button id="mem3-button">Memory #3</button>
     <h1>My Top 3 Memories of <span>This Year</span></h1>
+    
+    <div id="mems">
+  
     <ol>
       <li>
         <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
+        <p class="more">After begging my parents for a helix piercing for literal years, I finally got it for my birthday this year!</p>
+        <img id="img1" src="https://i.pinimg.com/736x/c8/b9/2d/c8b92d21f32ff647e2a77b95d6625fb1.jpg">
       </li>
 
       <li>
         <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
+        <p class="more">Art History class went on a trip to the met to see Islamic art. It was a fun trip and the weather was great.</p>
+        <img id="img2" src="https://i.pinimg.com/736x/c8/b9/2d/c8b92d21f32ff647e2a77b95d6625fb1.jpg" alt="to be added">
       </li>
 
       <li>
         <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
+        <p class="more">Unit 9 Web Dev project- it was a lot of fun to make, and it was amazing to see everyone's positive responses to it! It's definitely one of my best memories this year.
+        </p>
+        <img id="img3" src="https://i.pinimg.com/736x/c8/b9/2d/c8b92d21f32ff647e2a77b95d6625fb1.jpg" alt="to be added">
       </li>
     </ol>
-
+    
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
       $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
+        $("#mem1").css("color", "forestgreen");
+        $("#img1").attr("src", "https://piercingxxl.com/cdn/shop/collections/helix-piercing.png?v=1696433614");
       });
 
       $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
+        $("#mem2").css("color", "forestgreen");
+        $("#img2").attr("src", "https://cdn.sanity.io/images/cctd4ker/production/c47d68fbeb2ac1df1c97065fc4c9576314114ac2-2100x1150.jpg?rect=539,36,1011,1074&w=3840&q=75&fit=clip&auto=format");
       });
 
       $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
+        $("#mem3").css("color", "forestgreen");
+        $("#img3").attr("src", "https://cdn.glitch.global/5e978a27-a546-4ee3-986f-8172abaf3d00/catprofile.png?v=1741140343386");
       });
+      
+      $("#mem1").html("<em>Memory #1</em>");
+      $("#mem2").html("<em>Memory #2</em>");
+      $("#mem3").html("<em>Memory #3</em>");
+      $(".more").css("color", "mediumseagreen")
+      
+       var newP = $("<p>");
+newP.text("It's crazy that we're so close to graduating from LaG. But I had a fun time at this school.");
+      newP.addClass("sharkspider");
+$("body").append(newP);
     </script>
   </body>
+      </div>
 </html>
 
 <!--- Taken From Khan Academy HTML/JS: Making webpages interactive with jQuery-->
